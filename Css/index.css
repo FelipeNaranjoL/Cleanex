@@ -68,13 +68,17 @@
 }
 /* Carrusel de trabajadores */
 
-/* #contenido aside {
-  width: 100%;
-  display: flex;
-} */
+#contenido aside {
+  padding-top: 20px;
+}
+#contenido aside h2 {
+  font-size: 50px;
+  color: #035899;
+  text-align: center;
+}
 
 .contenedor {
-  width: 1000%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,19 +151,72 @@
   margin-bottom: 1.75rem;
 }
 
-@media screen and (max-width: 320px) {
-  .card-data {
-    padding: 1rem;
+@media screen and (max-width: 850px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #035899;
+    width: 100%;
+  }
+
+  #navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  #navbar .logo img {
+    width: 250px;
+    height: 90px;
+    position: relative;
+    z-index: 10;
+  }
+  #navbar ul li {
+    display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .card-content {
-    margin-inline: 3rem;
+@media screen and (max-width: 1119px) {
+  #contenido {
+    width: auto;
+  }
+
+  #contenido #parrafo2 {
+    width: auto;
+    float: none;
+    padding: 5px;
+  }
+  #contenido #parrafo3 {
+    width: auto;
+    float: none;
+    padding: 5px;
+  }
+
+  .card-data {
+    padding: 1rem;
+  }
+  .encabezado-aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 1120px) {
+  .card-content {
+    margin-inline: 3rem;
+  }
+  .encabezado-aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1181px) {
   .card-container {
     max-width: 1120px;
   }
