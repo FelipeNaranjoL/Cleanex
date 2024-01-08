@@ -1,3 +1,4 @@
+/* Navegador */
 .navbar,
 .container-fluid {
   display: flex;
@@ -14,8 +15,6 @@
 .logo img {
   width: 250px;
   height: 90px;
-  /* position: relative;
-  z-index: 10; */
 }
 
 .navbar .navbar-collapse {
@@ -42,38 +41,142 @@
 .navbar-toggler-icon {
   background-color: white;
 }
+
+/* ############################ */
+
+/* Contenedor principal */
 #contenido {
   background-color: white;
   padding: 0px 20px 0px 20px;
   position: relative;
   top: 40px;
   margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#contenido .parrafo {
+  width: 50%;
+}
+
+#contenido .parrafo-contenido {
+  margin-top: 20px;
+}
+
+#contenido .informacion {
+  background-color: #035899;
+  /* border-radius: 20px; */
 }
 
 #contenido #parrafo1 {
-  width: 10 0%;
-  float: left;
-  padding: 5px 0px 40px 0px;
+  background-color: #035899;
+  padding: 0px 0px 40px 0px;
+}
+#contenido #parrafo1 h2 {
+  padding: 0 15px;
+  color: white;
+  font-size: 3rem;
+}
+#contenido #parrafo1 p {
+  color: white;
+  text-align: justify;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+#contenido #parrafo1_2 {
+  background-color: #035899;
+  padding: 20px;
+}
+
+.carousel-item img {
+  width: 100% !important;
+  height: 400px !important;
 }
 
 #contenido #parrafo2 {
-  width: 50%;
-  float: left;
-  padding: 5px;
+  background-color: #035899;
+  color: white;
 }
+#contenido #parrafo2 h2 {
+  padding: 0 15px;
+  font-size: 3rem;
+}
+#contenido #parrafo2 p {
+  text-align: justify;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+#contenido #parrafo2_2 .center-image {
+  padding: 1em;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  place-items: center;
+}
+#contenido #parrafo2_2 img {
+  width: 400px;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+}
+#contenido #parrafo2_2 img:hover {
+  transition-duration: 0.9s;
+  transform: scale(1.2);
+}
+
 #contenido #parrafo3 {
-  width: 50%;
-  float: right;
-  padding: 5px;
+  padding: 15px 0 0 0;
+  color: white;
 }
+
+#contenido #parrafo3 h2 {
+  padding: 0 15px;
+  font-size: 3rem;
+}
+
+#contenido #parrafo3 p {
+  text-align: justify;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+#contenido #parrafo3_2 .center-image {
+  padding: 1em;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  place-items: center;
+}
+#contenido #parrafo3_2 img {
+  width: 400px;
+  transition: transform 0.4s ease;
+}
+#contenido #parrafo3_2 img:hover {
+  transition-duration: 0.9s;
+  transform: scale(1.2);
+}
+
+/* ############################ */
+
 /* Carrusel de trabajadores */
 
 #contenido aside {
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  /* padding-top: 20px; */
+  box-shadow: 0 0 10px 0 black;
 }
 #contenido aside h2 {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #035899;
   font-size: 50px;
-  color: #035899;
+  color: white;
   text-align: center;
 }
 
@@ -232,6 +335,8 @@
 }
 
 /* ############################ */
+
+/* Footer */
 #contenido footer {
   clear: both;
   width: 100%;
@@ -243,3 +348,5 @@
 #contenido footer p {
   text-align: center;
 }
+
+/* ############################ */

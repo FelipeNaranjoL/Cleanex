@@ -1,0 +1,5 @@
+$carousel-transition-duration: 0.3s;
+
+.carousel-item {
+  transition: $carousel-transition-duration;
+}
